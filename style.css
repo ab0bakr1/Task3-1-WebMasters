@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#onelogin{
+    height: 80svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Login{
+    display: none;
+    position: fixed;
+    z-index: 101;
+}
+.Login form{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    background-color: rgb(35, 35, 35);
+    border-radius: 10px;
+    padding: 20px 40px;
+    gap: 20px;
+}
+.Login form input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(197, 197, 197);
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+
+.card {
+    height: 30rem !important;
+}
+
+.Cart{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 0;
+    height: 100%;
+    min-width: 300px;
+    top: 0;
+    right: 0;
+    z-index: 101;
+    background-color: rgb(39, 39, 39);
+}
+#CartProducts{
+    display: block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 80%;
+    padding: 0 10px;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(192, 192, 192);
+    font-size: 1.2rem;
+    align-items: center;
+    margin: 10px;
+}
+#countCart{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%,70%);
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-weight: 700;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    background-color: rgb(39, 39, 39);
+    color: rgb(192, 192, 192);
+}
+#overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.716);
+    z-index: 100;
+}
